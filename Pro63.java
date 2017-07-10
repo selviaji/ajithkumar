@@ -10,7 +10,6 @@ public class Pro63 {
 	String s1=s.nextLine();
 	String s2="";
 	int count=0;
-	int n=0;
 	for(int i=0;i<s1.length()-1;i++){
 		if(!s1.substring(i,i+1).equals("\0")){
 			for(int j=i+1;j<s1.length();j++){
