@@ -8,7 +8,6 @@ public class Hunter123 {
 	Scanner s=new Scanner(System.in);
 	System.out.println("Enter the given string ");
 	String a=s.nextLine();
-	String b="";
 	int count=0;
 	for(int i=0;i<a.length()-1;i++){
 		count=0;
@@ -19,8 +18,8 @@ public class Hunter123 {
 		}if(count!=0){
 			a=a.replace(a.charAt(i),'\0');
 		}
-	}b=a;
-	System.out.println(b);
+	}
+	System.out.println(a);
 }
 
 }
