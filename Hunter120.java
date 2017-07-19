@@ -4,7 +4,7 @@ public class Hunter120 {
 	public static String output1;
 	public static void main(String[] args) {
 	usermethod("template");
-	System.out.println(output1);
+	System.out.println("The smallest palidrome is = "+output1);
 
 	}
 	public static void usermethod(String input1){
@@ -14,22 +14,20 @@ public class Hunter120 {
 		int max=10;
 		int min=10;
 		int var1=0;
-		int var=0;
 		int var2=0;
 	for(int i=0;i<s.length();i++){count=0;
 			for(int j=0;j<s.length();j++){
 					if(input1.substring(i,i+1).equalsIgnoreCase(input1.substring(j,j+1))){
 						count++;
-						var=i;
 					}
 				}if(count%2==0&&count!=0){
 				if(count<max){
 					max=count;
-					var1=var;
+					var1=i;
 				}
 				}else if(count<min){
 					min=count;
-		           var2=var;
+		           var2=i;
 				}
 				
 			}for(int i=0;i<max;i++){
